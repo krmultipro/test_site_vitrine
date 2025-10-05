@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Le Cari Soleil – Restaurant Réunionnais</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <img id="logoImg" src="images/uploads/logo.png" alt="Logo" onerror="this.style.display='none'"/>
+      <h1 id="heroTitle">Le Cari Soleil</h1>
+      <p id="heroSubtitle">Cuisine créole réunionnaise, fraîche et faite maison.</p>
+      <a class="btn" id="ctaBtn" href="#reservation">Réserver</a>
+    </div>
+    <nav class="nav">
+      <a href="#menu">Menu</a>
+      <a href="#horaires">Horaires</a>
+      <a href="#contact">Contact</a>
+      <a class="admin-link" href="/admin/">Admin</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="menu" class="card">
+      <h2>Menu du jour</h2>
+      <ul id="menuList" class="menu-list"></ul>
+    </section>
+
+    <section id="horaires" class="card">
+      <h2>Horaires</h2>
+      <pre id="hoursText" class="pre"></pre>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p><strong>Adresse :</strong> <span id="addressText"></span></p>
+      <p><strong>Téléphone :</strong> <a id="phoneLink" href="#"></a></p>
+      <div id="mapEmbed"></div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small id="footerText">© <span id="yearNow"></span> Le Cari Soleil — Tous droits réservés.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
